@@ -1,0 +1,69 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-size: 30px;
+   font-family: Arial;
+}
+body{
+   background: #000428; /* fallback color if gradients are not supported*/
+   background: repeating-linear-gradient(61deg,rgba(0,4,40,0.9), #004E92);
+   z-index:-1;
+}
+.display{
+   overflow: auto;
+   margin:4rem;
+   z-index:1;
+}
+.calc{
+   width: 420px;
+   text-align: center;
+
+   margin: 60px auto;
+   border-radius: 20px;
+   /*padding: 1rem;*/
+}
+.calc{
+   background: #D66D75; /* fallback color if gradients are not supported*/
+   background: repeating-linear-gradient(14deg,rgba(214,109,117,0.6), rgba(226,149,135,0.6));
+}
+.display{
+   color: #ffffff;
+   text-align: center;
+   font-size: 50px;
+   padding: 20px;
+}
+.keypad{
+
+}
+.keypad-table{
+ z-index:100;
+}
+.keypad-table tr:first-child .key{
+   background-color: #a5a5a5;
+}
+.keypad-table tr:first-child .key:active{
+   background-color: #a5a5a590;
+}
+.keypad-table tr td:last-child .key{
+   background-color: #8300b6;
+}
+.keypad-table tr td:last-child .key:active{
+   background-color: rgba(95, 12, 115, 0.8);
+}
+.key{
+   width: 90px;
+   height: 90px;
+   border: 1px solid black;
+   text-align: center;
+   line-height: 90px;
+   border-radius: 90px;
+   margin: 5px;
+   background-color: #333333;
+   color: #ffffff;
+   cursor: pointer;
+   user-select: none;
+}
+.key:active{
+   background-color: #33333390;
+}
